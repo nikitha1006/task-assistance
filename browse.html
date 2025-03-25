@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Tasks - EliteSync</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #a8dadc, #457b9d);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .logo span {
+            color: #0056b3;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a.btn {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        nav a:hover,
+        nav a.btn:hover {
+            background-color: #0056b3;
+            color: #fff;
+        }
+
+        .task-list {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .task-list h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        .task-item {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .task-item h3 {
+            margin-bottom: 5px;
+        }
+
+        .task-details {
+            flex-grow: 1;
+        }
+
+        .task-actions {
+            text-align: right;
+        }
+
+        .task-actions a {
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .task-actions a:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Elite<span>Sync</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="browse.html">Browse Tasks</a></li>
+                <li><a href="post.html">Post a Task</a></li>
+                <li><a href="my-tasks.html">My Tasks</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" class="btn">Login</a></li>
+                <li><a href="signup.html" class="btn">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="task-list">
+        <h2>Available Tasks</h2>
+        <div class="task-item">
+            <div class="task-details">
+                <h3>Website Development</h3>
+                <p>Need a simple website for my small business.</p>
+            </div>
+            <div class="task-actions">
+                <a href="#">View Details</a>
+            </div>
+        </div>
+        <div class="task-item"><div class="task-details"><h3>Math Teacher</h3><p>Need help with algebra.</p></div><div class="task-actions"><a href="#">View Details</a></div></div>
+        <div class="task-item"><div class="task-details"><h3>Labour Work</h3><p>Help needed for yard cleanup.</p></div><div class="task-actions"><a href="#">View Details</a></div></div>
+        <div class="task-item"><div class="task-details"><h3>Construction Help</h3><p>Looking for a skilled carpenter.</p></div><div class="task-actions"><a href="#">View Details</a></div></div>
+        <div class="task-item"><div class="task-details"><h3>Nurse Assistant</h3><p>Part-time care for elderly.</p></div><div class="task-actions"><a href="#">View Details</a></div></div>
+        <div class="task-item"><div class="task-details"><h3>English Tutor</h3><p>Help with essay editing.</p></div><div class="task-actions"><a href="#">View Details</a></div></div>
+        <div class="task-item"><div class="task-details"><h3>Moving Help</h3><p>Need help loading a truck.</p></div><div class="task-actions"><a href="#">View Details</a></div></div>
+        <div class="task-item"><div class="task-details"><h3>Plumbing Repair</h3><p>Fixing a leaky faucet.</p></div><div class="task-actions"><a href="#">View Details</a></div></div>
+        <div class="task-item"><div class="task-details"><h3>Cooking Assistant</h3><p>Help with meal prep.</p></div><div class="task-actions"><a href="#">View Details</a></div></div>
+        <div class="task-item"><div class="task-details"><h3>Pet Walking</h3><p>Daily dog walks needed.</p></div><div class="task-actions"><a href="#">View Details</a></div></div>
+        <div class="task-item"><div class="task-details"><h3>Data Entry</h3><p>Inputting spreadsheet data.</p></div><div class="task-actions"><a href="#">View Details</a></div></div>
+        <div class="task-item"><div class="task-details"><h3>Graphic Design</h3><p>Designing a logo.</p></div><div class="task-actions"><a href="#">View Details</a></div></div>
+        <div class="task-item"><div class="task-details"><h3>Cleaning Service</h3><p>Deep cleaning apartment.</p></div><div class="task-actions"><a href="#">View Details</a></div></div>
+        <div class="task-item"><div class="task-details"><h3>Programming Help</h3><p>Debugging Python code.</p></div><div class="task-actions"><a href="#">View Details</a></div></div>
+        <div class="task-item"><div class="task-details"><h3>Gardening Help</h3><p>Weeding and planting.</p></div><div class="task-actions"><a href="#">View Details</a></div></div>
+        <div class="task-item"><div class="task-details"><h3>Painting Service</h3><p>Painting a bedroom.</p></div><div class="task-actions"><a href="#">View Details</a></div></div>
+        <div class="task-item"><div class="task-details"><h3>Event Planning</h3><p>Organizing a party.</p></div><div class="task-actions"><a href="#">View Details</a></div></div>
+        <div class="task-item"><div class="task-details"><h3>Photography</h3><p>Taking event photos.</p></div><div class="task-actions"><a href="#">View Details</a></div></div>
+        <div class="task-item"><div class="task-details"><h3>Carpentry</h3><p>Building a bookshelf.</p></div><div class="task-actions"><a href="#">View Details</a></div></div>
+        <div class="task-item"><div class="task-details"><h3>Tutoring</h3><p>Help with physics.</p></div><div class="task-actions"><a href="#">View Details</a></div></div>
+        <div class="task-item"><div class="task-details"><h3>Delivery Service</h3><p>Delivering packages.</p></div><div class="task-actions"><a href="#">View Details</a></div></div>
+        <div class="task-item"><div class="task-details"><h3>Translation</h3><p>Translating documents.</p></div><div class="task-actions"><a href="#">View Details</a></div></div>
+
+        </section>
+
+    <footer>
+        <p>&copy; 2024 EliteSync. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Optional JavaScript for dynamic effects or interactions
+    </script>
+</body>
+</html>
