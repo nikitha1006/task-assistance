@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EliteSync - Task Assistance</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #007bff;
+     /* Changed background gradient */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .logo span {
+            color: #0056b3;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a.btn {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        nav a:hover,
+        nav a.btn:hover {
+            background-color: #0056b3;
+            color: #fff;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/1600x900/?work,team');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+
+        .hero-content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #f0f0f0;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        footer h2 {
+            margin-bottom: 30px;
+        }
+
+        .feature-boxes {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            width: 300px;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature h3 {
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+    </style>
+    <script src="script.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js"></script>
+    <script src="firebase-config.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Elite<span>Sync</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="browse.html">Browse Tasks</a></li>
+                <li><a href="post.html">Post a Task</a></li>
+                <li><a href="my-tasks.html">My Tasks</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" class="btn">Login</a></li>
+                <li><a href="signup.html" class="btn">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Find the Right Help, <br> Get Things Done!</h1>
+            <p>EliteSync connects busy individuals with skilled task helpers. Simplify your life today!</p>
+            <a href="signup.html" class="cta-btn">Get Started</a>
+        </div>
+    </section>
+
+    <footer>
+        <h2>Why Choose EliteSync?</h2>
+        <div class="feature-boxes">
+            <div class="feature">
+                <h3>Task Management</h3>
+                <p>Post and manage tasks effortlessly.</p>
+            </div>
+            <div class="feature">
+                <h3>Secure Payments</h3>
+                <p>Safe transactions for both requesters and helpers.</p>
+            </div>
+            <div class="feature">
+                <h3>Real-time Chat</h3>
+                <p>Communicate securely with helpers.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
